@@ -11,7 +11,7 @@ const app = express();
 // Configuração CORS para permitir requisições do frontend
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
-    ? ['https://estoqueainf.vercel.app'] // Substitua pelo seu domínio no Vercel
+    ? ['https://estoqueainf.vercel.app'] 
     : ['http://localhost:5173', 'http://localhost:3000'], // URLs de desenvolvimento
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
